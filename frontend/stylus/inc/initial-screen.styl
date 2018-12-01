@@ -1,0 +1,100 @@
+.initial-screen
+  justify-content center
+  .container
+    height 820px
+    margin 20px
+    background-color #f7f7f7
+    padding 120px 0 140px
+    justify-content space-between
+    position relative
+    z-index 1
+  .info
+    max-width 340px
+    margin 105px 0 105px 105px
+    &:before
+      content ''
+      width 20px
+      height 570px
+      position absolute
+      background $blue
+      left -20px
+      bottom 70px
+    &:after
+      content ''
+      width 75px
+      position absolute
+      left -20px
+      background $repeat
+      height 570px
+      bottom 70px
+  h1
+    color #4e4e4e
+    font-family 'Montserrat'
+    font-size 36px
+    font-weight 800
+    line-height 48px
+    text-transform uppercase
+  hr
+    max-width 260px
+    border 0
+    height 1px
+    background-color #4e4e4e
+    margin 25px 0 30px
+  p
+    color #4e4e4e
+    font-family 'Georgia'
+    font-style italic
+    font-size 18px
+    line-height 32px
+  button
+    background-color #27a4eb
+    color #ffffff
+    font-family "PT Sans"
+    font-size 16px
+    font-weight 400
+    text-transform uppercase
+    padding 19px 30px 17px
+    height: 100%
+    margin-top 30px
+    transition .55s
+    max-height 50px
+    display flex
+    align-items center
+    &:hover
+      background-color: #76c4f0;
+  .slider
+    position relative
+    right -20px
+    width 765px
+    height 560px
+    img
+      transition 1s
+    progress
+      position: absolute;
+      bottom: 30px
+      left 35px
+      max-width: 455px
+      height: 1px;
+      width: 100%
+      opacity: 0.5;
+      border 0
+      background #fff
+      &::-webkit-progress-bar
+        position: absolute;
+        bottom: 30px
+        left 35px
+        max-width: 455px
+        height: 1px;
+        width: 100%
+        opacity: 0.5;
+        border 0
+        background: $blue
+      &::-webkit-progress-value,&::-moz-progress-bar
+        background-color: $blue
+        height 1px
+
+    img
+      width 765px
+      height 560px
+      object-fit cover
+      position absolute

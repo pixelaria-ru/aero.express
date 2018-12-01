@@ -1,0 +1,154 @@
+.category
+  .initial-screen
+    .container
+      height 594px
+      align-items: center;
+      justify-content: flex-start;
+      &:before
+        content ''
+        width 240px
+        height 50px
+        position absolute
+        background #f7f7f7
+        right 0px
+        bottom 0px
+        z-index: 3
+    .left-side
+      max-width: 300px
+      margin: 60px 60px 0 135px
+
+      &:before
+        content ''
+        width 20px
+        height 210px
+        position absolute
+        background $blue
+        left -20px
+        bottom 140px
+      &:after
+        content ''
+        width 75px
+        position absolute
+        left -20px
+        background $repeat
+        height 210px
+        bottom 140px
+
+      hr
+        max-width: 150px
+    .right-side
+      &:before
+        content ''
+        width 240px
+        height 50px
+        position absolute
+        background $blue
+        right -20px
+        bottom -20px
+        z-index: 2
+      &:after
+        content ''
+        width 240px
+        position absolute
+        right -20px
+        background $repeat
+        height 50px
+        z-index: 5
+        bottom -20px
+.type-room
+  text-align: center;
+  .type-room__img
+    margin: 0 30px
+    width: 170px;
+    border-radius: 50%
+    height: 170px;
+    border: 15px solid #ffffff;
+    background-color: #8bc6e8;
+    margin-bottom: 35px
+
+  h4
+    color: #4e4e4e;
+    font-family: Montserrat;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 400;
+    border-bottom: 1px dotted #333
+    padding-bottom: 2px
+
+.section-rooms
+  .container
+    padding: 0 80px 90px
+    justify-content: space-between;
+
+  h2
+    color #4e4e4e
+    font-family Montserrat
+    font-size 36px
+    display flex
+    align-items center
+    justify-content center
+    font-weight 400
+    margin 70px 0
+    &:before
+      content ''
+      display block
+      width 35px
+      height 2px
+      margin-right 20px
+      margin-top 7px
+      background $blue-light
+    &:after
+      content ''
+      display block
+      width 35px
+      height 2px
+      margin-left 20px
+      margin-top 7px
+      background $blue-light
+
+
+  .left-side
+    max-width: 590px
+    p
+      border: 1px solid #f2f2f2;
+      color: #4e4e4e;
+      font-family: "PT Sans";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 27px;
+      padding: 18px 25px
+      border-left: 5px solid $blue
+      margin-bottom: 40px
+.section-rooms__list
+  .section-rooms__list-item
+    margin: 20px 0
+    span
+
+      color: #4e4e4e;
+      font-family: "Georgia";
+      font-size: 16px;
+      font-style: italic
+      line-height: 32px;
+  &.list--first
+
+    .section-rooms__list-item
+      position: relative;
+      &:first-child
+        &:before
+          display none
+      &:before
+        content ''
+        position absolute
+        width 590px
+        height 1px
+        left: 0
+        top: -15px
+        background-color: #f2f2f2;
+      span
+        font-weight: 700;
+  &.list--second
+    margin-left: 74px
+  &.list--three
+    margin-left: 49px
+  .right-side
+    max-width: calc(100% - 590px)

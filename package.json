@@ -1,0 +1,49 @@
+{
+  "name": "aero.express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Smirennikov/pixelaria.git"
+  },
+  "author": "Smirennikov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Smirennikov/pixelaria/issues"
+  },
+  "homepage": "https://github.com/Smirennikov/pixelaria#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.3.1",
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-cheerio": "^0.6.3",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-debug": "^4.0.0",
+    "gulp-filesize": "0.0.6",
+    "gulp-htmlhint": "^2.2.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-postcss": "^8.0.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-replace": "^1.0.0",
+    "gulp-shorthand": "^1.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-stylus": "^2.7.0",
+    "gulp-svg-sprites": "^4.1.2",
+    "gulp-svgmin": "^2.1.0",
+    "gulp-uglify": "^3.0.1",
+    "imagemin-mozjpeg": "^8.0.0",
+    "postcss-focus": "^4.0.0",
+    "postcss-pxtorem": "^4.0.1",
+    "postcss-short": "^5.0.0",
+    "vinyl-ftp": "^0.6.1"
+  },
+  "dependencies": {}
+}

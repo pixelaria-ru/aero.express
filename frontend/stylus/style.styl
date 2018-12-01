@@ -1,0 +1,36 @@
+$blue = #27a4eb
+$blue-light = #76c4f0
+$repeat = repeating-linear-gradient(45deg, #006faf,#006faf 1px, #fff0 2px,#fff0 4px)
+@import '../fonts/fonts.css'
+@import 'inc/reset.styl'
+
+.container
+  max-width 1280px
+  width 100%
+  margin auto
+.flex
+  display flex
+@import 'inc/header.styl'
+@import 'inc/initial-screen.styl'
+@import 'inc/for-who.styl'
+@import 'inc/category-of-room.styl'
+@import 'inc/advantages.styl'
+@import 'inc/additional-info.styl'
+@import 'inc/room.styl'
+@import 'inc/category.styl'
+@import 'inc/footer.styl'
+
+.map
+  .container
+    height 400px
+    background-color #f2f2f2
+hr
+  max-width: 1110px
+  margin:  0 auto;
+  border 0
+  height 10px
+  background-image linear-gradient(180deg, #dbdbdb 0%, rgba(219, 219, 219, 0) 100%, rgba(219, 219, 219, 0) 100%)
+  opacity 0.3
+.h2-hidden,.hid
+  display none
+@import 'inc/adaptive.styl'

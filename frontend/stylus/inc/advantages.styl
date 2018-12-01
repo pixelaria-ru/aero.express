@@ -1,0 +1,110 @@
+.advantages
+  margin-top 60px
+
+  .container
+    padding 0 85px
+
+  .flex
+    align-items flex-start
+  &__left-side
+    width calc(100% - 390px)
+    flex-wrap wrap
+  &__right-side
+    border 1px solid #27a4eb
+    max-width 390px
+    padding 60px 50px 60px 40px
+    top -90px
+    position relative
+
+    &:before
+      content ''
+      background-color #f7f7f7
+      position absolute
+      size 100%
+      z-index: -1
+      top -10px
+      left 10px
+    h3
+      color #404040
+      font-family Montserrat
+      font-size 18px
+      font-weight 400
+      margin-bottom 20px
+      &:before
+        content ''
+        width 20px
+        height 230px
+        position absolute
+        background $blue
+        right -30px
+        bottom 55px
+      &:after
+        content ''
+        width 75px
+        position absolute
+        right -30px
+        background $repeat
+        height 230px
+        bottom 55px
+    p
+      color #525252
+      font-family sans-serif
+      font-style italic
+      font-size 14px
+      line-height 28px
+      margin-bottom 15px
+      a
+        color $blue
+        position relative
+        &:after
+          content: ''
+          position: absolute
+          height: 1px
+          width: 0%
+          transition: .55s
+          background: $blue
+          bottom: -5px
+          left: 0
+        &:hover
+          &:after
+            width: 100%
+
+    hr
+      border 0
+      margin-top 60px
+      max-width 150px
+      height 1px
+      background-color #27a4eb
+  h2
+    color #4e4e4e
+    font-family Montserrat
+    font-size 36px
+    font-weight 400
+    margin-bottom 50px
+    display flex
+    &:before
+      content ''
+      background: $repeat
+      width 20px
+      height 50px
+      display block
+      margin-right 20px
+
+.advantage
+  align-items flex-start
+  max-width 50%
+  margin-right 40px
+  margin-bottom 60px
+  .icon
+    width 70px
+    height 70px
+    border 1px solid #27a4eb
+    border-radius 50%
+    margin-right 20px
+  p
+    color #565656
+    font-family Montserrat
+    font-size 16px
+    font-weight 400
+    line-height 30px
+    max-width 210px

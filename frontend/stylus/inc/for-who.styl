@@ -1,0 +1,137 @@
+.for-who
+  h2
+    color #4e4e4e
+    font-family Montserrat
+    font-size 36px
+    display flex
+    align-items center
+    justify-content center
+    &:before
+      content ''
+      display block
+      width 35px
+      height 2px
+      margin-right 20px
+      margin-top 7px
+      background $blue-light
+    &:after
+      content ''
+      display block
+      width 35px
+      height 2px
+      margin-left 20px
+      margin-top 7px
+      background $blue-light
+    font-weight 400
+    margin 70px 0
+    display flex
+    align-items center
+    justify-content center
+    &:before
+      content ''
+      display block
+      width 35px
+      height 2px
+      margin-right 20px
+      margin-top 7px
+      background $blue-light
+    &:after
+      content ''
+      display block
+      width 35px
+      height 2px
+      margin-left 20px
+      margin-top 7px
+      background $blue-light
+  .container
+    justify-content space-between
+    padding 0 85px 90px
+.for-who__block
+  padding 40px
+  max-width 490px
+  margin-bottom 30px
+  border 1px solid #f2f2f2
+  position relative
+  transition .55s
+  cursor pointer
+  &:before
+    content ''
+    width 30px
+    height 30px
+    border-radius 50%
+    border 1px solid #f2f2f2
+    background-color #ffffff
+    position absolute
+    right -15px
+    top 0
+    bottom 0
+    margin auto
+    transition .55s
+  &.active
+    border 1px solid #76c4f0
+    &:before
+      border 1px solid #27a4eb
+  h3
+    color #4e4e4e
+    font-family Montserrat
+    font-size 24px
+    font-weight 400
+    margin-bottom 12px
+  p
+    color #4e4e4e
+    font-family 'PT Sans'
+    font-size 16px
+    font-weight 400
+    line-height 30px
+.for-who__right-side
+  position relative
+  max-width: 565px
+  width: 100%
+  max-height: 460px
+.rect-one
+  width: 249px;
+  height: 126px;
+  cursor pointer
+  position: relative;
+  transform: rotate(-50deg);
+  background-color: #f7f7f7;
+  left: 35px;
+  top: 101px;
+  transition: .55s
+  &.active
+    transform: scale(1.1) rotate(-50deg);
+  .rect-blue
+    width: 68px;
+    height: 46px;
+    position: absolute;
+    left: 0
+    transition .55s
+    bottom: 0
+    background-color: #76c4f0;
+.rect-two
+  width: 367px;
+  cursor pointer
+  height: 125px;
+  position: absolute;
+  background-color: #f7f7f7;
+  right: 0;
+  bottom: 85px;
+  transition: .55s
+  &.active
+    transform: scale(1.1);
+  .rect-blue
+    position: absolute;
+    left: 0
+    transition .55s
+    bottom: 0
+    width: 184px;
+    height: 42px;
+    background-color: #76c4f0;
+.rect-three
+  width: 132px;
+  height: 126px;
+  cursor pointer
+  background-color: #f7f7f7;
+  position: absolute;
+  left: 0;
+  bottom: 0;

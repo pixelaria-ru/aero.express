@@ -1,0 +1,158 @@
+doctype html
+html(lang='ru')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name='viewport' content='ya-title=#e04592, ya-dock=fade, initial-scale=1, maximum-scale=1, user-scalable=no')
+    meta(name='robots' content='none')
+    link(rel='stylesheet' href='css/style.css')
+    title aero.express
+  body
+    include inc/header.pug
+    main.room.container
+        .initial-screen.flex
+          .container.flex
+            .room-left-side
+              .slider-room
+                button.prev
+                img(src='images/room-initial-screen.jpg' )
+                img(src='images/room-img-2.jpg')
+                img(src='images/room-img-1.jpg')
+                .dots
+                  span.active
+                  span
+                  span
+                
+                
+          
+                button.next          
+            .room-right-side
+              .speedbar
+                a(href='/') Главная / 
+                a(href='/') Стандартные номера / 
+                span Одноместный без окна 
+                
+              h1 
+                span.vis ОДНОМЕСТНЫЙ 
+                span.hid 1-
+                |НОМЕР без окна, CТАНДАРТ
+              hr
+              p Небольшой комфортный номер для 1 гостя. Спальная комната (кровать, тумбочка, система кондиционирования, комната (кровать, тумбочка, система кондиционирования, 
+              .offers.flex
+                span от 1300 ₽ в час
+                button Забронировать номер
+        .comfort
+          .container.flex
+            .left-side
+              h2 Удобства
+            .right-side.flex
+              .advantage.flex
+                .icon
+                p 1 односпальная кровать
+              .advantage.flex
+                .icon
+                p Собственная ванная комната
+              .advantage.flex
+                .icon
+                p Площадь номера - 7,5 кв.м.
+              .advantage.flex
+                .icon
+                p Кондиционер
+              .advantage.flex
+                .icon
+                p Телевизор с диагональю 43’’
+              .advantage.flex
+                .icon
+                p Фен, ванные принадлежности
+              .advantage.flex
+                .icon
+                p Телефон, WiFi, USB, розетка
+              .advantage.flex
+                .icon
+                p Обслуживание номеров
+        hr
+        .all-what-need
+          h2 
+            span.vis Всё что нужно для путешествия
+            span.hid  Комплектация
+          .container.flex
+            .left-side.flex
+              ul.first-list
+                li.list-item
+                  span Ванная:
+                li.list-item
+                  span Мебель:
+                li.list-item
+                  span Техника:
+                li.list-item
+                  span Мелочи:
+              ul.second-list
+                li.list-item
+                  span Душ, ванные принадлежности
+                li.list-item
+                  span Тумбочка, кровать, стулья
+                li.list-item
+                  span Душ, ванные принадлежности
+                li.list-item
+                  span Тумбочка, кровать, стулья
+              a(href='#').all-what-need__link Заказать. номер
+            .right-side
+              img(src='images/all-what-need.jpg' alt='')
+            
+        .initial-screen.flex
+          .container.comm.flex
+            button.com-but  
+            .comment
+              h2 
+                span.vis Что говорят клиенты
+                span.hid Отзывы
+              p Небольшой комфортный номер для 1 гостя. Спальная комната (кровать, тумбочка, система кондиционирования, комната (кровать, тумбочка, система кондиционирования,
+              .flex.stars
+                button.star
+                  +icon('star-pol','star-pol')
+                  +icon('star','star-ovl')
+                button.star
+                  +icon('star-pol','star-pol')
+                  +icon('star','star-ovl')
+                button.star
+                  +icon('star-pol','star-pol')
+                  +icon('star','star-ovl')
+                button.star
+                  +icon('star-pol','star-pol')
+                  +icon('star','star-ovl')
+                button.star
+                  +icon('star-pol','star-pol')
+                  +icon('star','star-ovl')
+
+      
+            button.com-but  
+            
+              
+        .other-rooms
+          h2 Другие номера для одного 
+            span.vis гостя
+                
+          .rooms.flex
+            article.room
+              img(src='images/room-img.jpg' alt='')
+              footer
+                h3 Одноместный номер с окном в терминале Е
+                hr
+            article.room
+              img(src='images/room-img.jpg' alt='')
+              footer
+                h3 Одноместный номер с окном в терминале Е
+                hr
+            article.room
+              img(src='images/room-img.jpg' alt='')
+              footer
+                h3 Одноместный номер с окном в терминале Е
+                hr
+                    
+        .map
+          .container
+              
+        
+    include inc/footer.pug        
+script
+  include scripts/slider.js

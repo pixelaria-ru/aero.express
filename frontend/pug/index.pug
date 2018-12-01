@@ -1,0 +1,112 @@
+doctype html
+html(lang='ru')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name='viewport' content='ya-title=#e04592, ya-dock=fade, initial-scale=1, maximum-scale=1, user-scalable=no')
+    meta(name='robots' content='none')
+    link(rel='stylesheet' href='css/style.css')
+    title aero.express 
+  body
+    include inc/header.pug
+    main.main.container
+        .initial-screen.flex
+          .container.flex
+            .info
+              h1 
+                span.h1-visible Единственный  
+                |отель прямо в аэропорту Шереметьево
+              hr
+              p Убойные преимущества, новые космические скидки и т.п.
+              button Забронировать номер
+            .slider
+              img(src='images/initial-screen-1.jpg')
+              img(src='images/room-img-2.jpg')
+              img(src='images/room-img-1.jpg')
+              progress.slider-progres(max='6000' value='0')
+
+        .for-who
+          h2 Для
+            span.h2-visible &nbsp;обычных и тразитных&nbsp;
+            span.h2-hidden &nbsp;всех&nbsp;
+            span.vis путешественников
+            span.hid пассажиров
+          .container.flex
+            .for-who__left-side
+              .for-who__block
+                h3 Терминал Аэроэкспресс
+                p Комнаты для всех пассажиров в общей зоне аэропорта, на пятом этаже терминала Аэроэкспресс. Удобные номера и отличное обслуживание. Почасовая оплата. 
+              .for-who__block
+                h3 Терминал Е
+                p Комфортные номера для транзитных (выделено) пассажиров в безвизовой зоне аэропорта,  транзитная зона терминала Е.  Отличное обслуживание.  
+            .for-who__right-side
+              .rect-one
+                .rect-blue
+              .rect-two
+                .rect-blue
+              .rect-three
+        hr
+        .category-of-room
+            h2 Категории номеров
+            .flex
+              .category-of-room__left-side
+                .category-of-room__block
+                  a(href='room.html')
+                    img(src='images/room-img-1.jpg')  
+                    h3 Бизнес-класс
+                    p Аккуратные номера на 1-2 гостей с телевизором, ванной и холодильничком
+              .category-of-room__right-side
+                .category-of-room__block
+                  a(href='room.html')
+                    img(src='images/room-img-2.jpg')
+                    span -20%
+                    h3 Полулюкс
+                    p Аккуратные номера на 1-2 гостей с телевизором, ванной и холодильничком
+                .category-of-room__block
+                  a(href='room.html')
+                    img(src='images/room-img-2.jpg')
+                    span -20%
+                    h3 Стандарт
+                    p Аккуратные номера на 1-2 гостей с телевизором, ванной и холодильничком
+        .advantages
+          .container
+            h2 Преимущества
+            .flex
+              .advantages__left-side.flex
+                .advantage.flex
+                  .icon
+                  p Легкий капсульный дизайн номеров в стиле кают лайнера
+                .advantage.flex
+                  .icon
+                  p Не нужно никуда ехать — отель в самом здании аэропорта
+                .advantage.flex
+                  .icon
+                  p Легкий капсульный дизайн номеров в стиле кают лайнера
+                .advantage.flex
+                  .icon
+                  p Не нужно никуда ехать — отель в самом здании аэропорта
+                .advantage.flex
+                  .icon
+                  p Легкий капсульный дизайн номеров в стиле кают лайнера
+                  
+              .advantages__right-side
+                h3 Что-нибудь классное!
+                p В этом блоке рассказываем еще больше подробностей о отеле, чтобы у гостя не осталось сомнений, что это именно то чего он хочет.
+                p Как нас найти: мы находимся в Терминале Е и Транзитной зоне. Вы легко увидите нас по огромной вывеске «Воздушный экспресс».
+                p Если у вас возникли какие-т трудности, воспользуйтесь 
+                  a(href='#') вот этой схемой. 
+                hr
+        hr
+        .additional-info
+          .container.flex
+            .additional-info__left-side
+              img(src='images/aircraft.jpg' alt='')
+            .additional-info__right-side
+              h2 Доп информация
+              p В этом блоке рассказываем еще больше подробностей о отеле, чтобы у гостя не осталось сомнений, что это именно то чего он хочет. В этом блоке рассказываем еще больше подробностей о отеле, чтобы у гостя не осталось сомнений, что это именно то чего он хочет.
+        .map
+          .container
+              
+        
+    include inc/footer.pug
+    

@@ -1,0 +1,398 @@
+.room
+  .initial-screen .com-but
+    padding: 0
+  .initial-screen .container
+    justify-content: flex-start;
+    padding: 130px 0 111px;
+    height: auto;
+  h1
+    color: #4e4e4e;
+    font-family: "Montserrat";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+.room-left-side
+  width: 590px;
+  height: 380px;
+  position: relative;
+  left -20px
+  .slider-room
+    .dots
+      position: absolute;
+      bottom: 27px
+      left 0
+      right 0
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      span
+        width: 10px;
+        height: 10px;
+        background-color: #ffffff;
+        opacity: 0.7;
+        display: block;
+        border-radius: 50%
+        margin: 0 7px
+        &.active
+          width: 15px;
+          height: 15px;
+          opacity: 1
+    img
+      position absolute
+      width: 590px;
+      height: 380px;
+      object-fit: cover;
+      opacity: 0
+      transition: 0.55s
+      &.active
+        opacity: 1
+    button
+      position: absolute;
+      top 0
+      bottom: 0
+      margin: auto;
+
+      z-index: 999
+      width: 100px;
+      height: 1px;
+      background-color: #ffffff;
+      padding:  0
+      &.next
+        right: 20px
+        padding:  0
+        max-height: 1px
+      &.prev
+        left 20px
+        max-height: 1px
+        padding: 0
+
+
+.room-right-side
+  max-width: 555px
+  margin-left: 30px
+  margin-top: 67px
+  max-height max-content
+  &:before
+    content ''
+    width 20px
+    height 200px
+    position absolute
+    background $blue
+    right -20px
+    bottom 70px
+  &:after
+    content ''
+    width 50px
+    position absolute
+    right -20px
+    background $repeat
+    height 200px
+    bottom 70px
+  .offers
+    align-items: center;
+    margin-top: 30px;
+    span
+      color: #565656;
+      font-family: "PT Sans";
+      font-size: 18px;
+      font-weight: 400;
+      margin-right: 19px
+  button
+    margin-top: 0px;
+  p
+    color: #4e4e4e;
+    font-size: 18px;
+    line-height: 32px;
+  hr
+    margin: 25px 0 30px
+    border 0
+    max-width: 555px;
+    height: 1px;
+    background-color: #4e4e4e;
+
+.speedbar
+  margin-bottom: 19px
+  span
+    color: #999999;
+    font-family: "PT Sans";
+    font-size: 12px;
+    font-weight: 400;
+  a
+    color: #27a4eb;
+    font-family: "PT Sans";
+    font-size: 12px;
+    font-weight: 400;
+
+
+.comfort
+  padding-top: 100px
+  padding-bottom: 90px
+  h2
+    color: #4e4e4e;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 400;
+    display flex
+    &:before
+      content ''
+      background: $repeat
+      width 20px
+      height 50px
+      display block
+      margin-right 20px
+  .container
+    align-items: flex-start;
+    justify-content: space-between;
+    padding 0 85px
+    .advantage
+      margin-right: 0px
+      margin-left: 30px;
+      max-width: 225px
+      align-items: center;
+      width: 100%;
+      p
+        width: calc(100% - 90px);
+
+
+  .left-side
+    max-width: 289px
+    width: 100%
+  .right-side
+    flex-wrap: wrap;
+    position: relative;
+    &:before
+      content ''
+      width: 1px;
+      height: 396px;
+      background-color: #bababa;
+      left -30px
+      top -21px
+      position: absolute;
+
+.all-what-need
+  padding-bottom: 105px
+  .container
+    align-items: center;
+    padding 0 85px
+  .left-side
+    flex-wrap: wrap;
+    width: 440px
+    position relative
+
+  .right-side
+    margin-left: 65px
+    img
+      width: 520px
+      height: 405px
+      object-fit: cover;
+  .second-list
+    margin-left: 35px
+  .all-what-need__link
+    color: #27a4eb;
+    font-family: "Georgia";
+    font-size: 18px;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 32px;
+    width: 100%
+  .first-list
+    span
+      font-weight: 700;
+    li
+      position: relative;
+      &:before
+        content: ''
+        width: 440px;
+        position: absolute;
+        height: 1px;
+        left: 0
+        bottom: -20px
+        background-color: #bababa;
+  .list-item
+    margin: 40px 0
+
+    span
+      color: #4e4e4e;
+      font-style: italic;
+
+      font-size: 18px;
+  h2
+    color #4e4e4e
+    font-family Montserrat
+    font-size 36px
+    line-height 36px
+    font-weight 400
+    margin 70px 0 95px
+    display flex
+    align-items center
+    justify-content center
+    &:before
+      content ''
+      display block
+      width 35px
+      height 2px
+      margin-right 20px
+      margin-top 7px
+      background $blue-light
+    &:after
+      content ''
+      display block
+      width 35px
+      height 2px
+      margin-left 20px
+      margin-top 7px
+      background $blue-light
+
+.other-rooms
+  padding-bottom: 120px
+  h2
+    color #4e4e4e
+    font-family Montserrat
+    font-size 36px
+    line-height 36px
+    font-weight 400
+    margin 70px 0
+    display flex
+    align-items center
+    justify-content center
+    &:before
+      content ''
+      display block
+      width 35px
+      height 2px
+      margin-right 20px
+      margin-top 7px
+      background $blue-light
+    &:after
+      content ''
+      display block
+      width 35px
+      height 2px
+      margin-left 20px
+      margin-top 7px
+      background $blue-light
+  .rooms
+    justify-content: center;
+    .room
+      max-width: 240px;
+      max-height: 300px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin: 0 15px
+      img
+        max-width: 240px;
+        height: 180px;
+        object-fit: cover;
+      footer
+        padding: 20px
+        h3
+          color: #4e4e4e;
+          font-family: "PT Sans";
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 24px;
+        hr
+          max-width: 120px;
+          margin-top: 20px
+          border 0
+          height: 1px;
+          background-color: #bababa;
+
+.room .initial-screen .container
+  &.comm
+    justify-content: space-evenly;
+    align-items: center;
+    &:before
+      content ''
+      width 20px
+      height 280px
+      position absolute
+      background $blue
+      left -20px
+      top 70px
+    &:after
+      content ''
+      width 50px
+      position absolute
+      left -20px
+      background $repeat
+      height 280px
+      top 70px
+
+.comment
+  width: 708px;
+  height: 414px;
+  border: 1px solid #27a4eb;
+  text-align: center;
+  padding: 88px
+  position: relative;
+  &:before
+    content:  ''
+    width: 100%
+    height 100%
+    left 10px
+    bottom: 10px
+    background: #fff
+    z-index: -1
+    position: absolute;
+  .stars
+    justify-content: center;
+  .star
+    width: 20px;
+    height: 18px;
+    position: relative;
+    background: 0
+    padding: 0
+    margin: 0
+    margin: 0 5px
+    .icon
+      fill #f7a802;
+      width: 20px;
+      height: 18px;
+      position: absolute;
+      &.star-ovl
+        opacity: 0
+    &:hover
+      background: 0
+      .icon
+        &.star-ovl
+          opacity: 1
+
+  h2
+    color: #4e4e4e;
+    font-family: "Montserrat";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+    margin-bottom: 50px
+    text-transform: uppercase;
+
+  p
+    color: #4e4e4e;
+    font-family: "Georgia";
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 30px
+.initial-screen .com-but
+  padding: 0
+  margin: 0
+  width: 97px;
+  height: 1px;
+  background-color: #4e4e4e;
+  &:before
+    content ''
+    width 300px
+    height 10px
+    position absolute
+    background $blue
+    right 65px
+    bottom -10px
+  &:after
+    content ''
+    width 300px
+    position absolute
+    right 65px
+    background $repeat
+    height 30px
+    bottom -10px

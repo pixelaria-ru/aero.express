@@ -1,0 +1,149 @@
+doctype html
+html(lang='ru')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name='viewport' content='ya-title=#e04592, ya-dock=fade, initial-scale=1, maximum-scale=1, user-scalable=no')
+    meta(name='robots' content='none')
+    link(rel='stylesheet' href='css/style.css')
+    title aero.express
+  body
+    include inc/header.pug
+    main.category.container
+      .initial-screen.flex
+          .container.flex
+            .left-side
+              .speedbar
+                a(href='/') Главная / 
+                span Комнаты
+
+              h1 Комнаты
+              hr
+              p Отдохните в наших уютных и функциональных номерах с превосходным обслуживанием
+              button Забронировать
+            .right-side.flex
+                  .type-room
+                    .type-room__img
+                      img(src='' alt='')
+                    h4 Стандарт
+                  .type-room
+                    .type-room__img
+                      img(src='' alt='')
+                    h4 Бизнес-класс
+                  .type-room
+                    .type-room__img
+                      img(src='' alt='')
+                    h4 Первый класс
+            
+      section.section-rooms
+        h2 Номера Стандарт
+        .container.flex
+          .left-side
+            p Комнаты для всех пассажиров в общей зоне аэропорта, на пятом этаже тер Аэроэкспресс.  Удобные номера и отличное обслуживание. 
+            .characteristcs.flex
+              ul.section-rooms__list.list--first
+                li.section-rooms__list-item
+                  span Одноместный	
+                li.section-rooms__list-item
+                  span Одноместный, без окна
+                li.section-rooms__list-item
+                  span Двуместный	
+                li.section-rooms__list-item
+                  span Двуместный, без окна
+                li.section-rooms__list-item
+                  span Двуместный, без окна	
+                li.section-rooms__list-item
+                  span Двуместный		
+              ul.section-rooms__list.list--second
+                li.section-rooms__list-item
+                  span Аэроэкспресс
+                li.section-rooms__list-item
+                  span Терминал Е
+                li.section-rooms__list-item
+                  span Аэроэкспресс	
+                li.section-rooms__list-item
+                  span Аэроэкспресс
+                li.section-rooms__list-item
+                  span Терминал Е
+                li.section-rooms__list-item
+                  span Терминал Е	
+              ul.section-rooms__list.list--three
+                li.section-rooms__list-item
+                  span от 2000 ₽ / час	
+                li.section-rooms__list-item
+                  span от 2000 ₽ / час
+                li.section-rooms__list-item
+                  span от 2000 ₽ / час
+                li.section-rooms__list-item
+                  span от 2000 ₽ / час
+                li.section-rooms__list-item
+                  span от 2000 ₽ / час	
+                li.section-rooms__list-item
+                  span от 2000 ₽ / час		
+            
+          .right-side
+            img(src='images/section-rooms-1.jpg' alt='')
+      hr
+      section.section-rooms
+        h2 Бизнес-клас
+        .container.flex
+          .right-side
+            img(src='images/section-rooms-2.jpg' alt='')
+          .left-side
+            p Комнаты для всех пассажиров в общей зоне аэропорта, на пятом этаже тер Аэроэкспресс.  Удобные номера и отличное обслуживание. 
+            .flex
+              ul.section-rooms__list.list--first
+                li.section-rooms__list-item
+                  span Трехместный	
+                li.section-rooms__list-item
+                  span Трехместный, без окна
+                li.section-rooms__list-item
+                  span Трехместный
+          
+              ul.section-rooms__list.list--second
+                li.section-rooms__list-item
+                  span Аэроэкспресс
+                li.section-rooms__list-item
+                  span Терминал Е
+                li.section-rooms__list-item
+                  span Терминал Е	
+        
+              ul.section-rooms__list.list--three
+                li.section-rooms__list-item
+                  span от 2000 ₽ / час	
+                li.section-rooms__list-item
+                  span от 2000 ₽ / час
+                li.section-rooms__list-item
+                  span от 2000 ₽ / час
+    
+          
+      hr
+      section.section-rooms
+        h2 Первый класс
+        .container.flex
+          
+          .left-side
+            p Комнаты для всех пассажиров в общей зоне аэропорта, на пятом этаже тер Аэроэкспресс.  Удобные номера и отличное обслуживание. 
+            .flex
+              ul.section-rooms__list.list--first
+                li.section-rooms__list-item
+                  span Трехместный	
+        
+          
+              ul.section-rooms__list.list--second
+                li.section-rooms__list-item
+                  span Аэроэкспресс
+        
+        
+              ul.section-rooms__list.list--three
+                li.section-rooms__list-item
+                  span от 2000 ₽ / час	
+          
+          .right-side
+            img(src='images/section-rooms-3.jpg' alt='')
+
+      .map
+        .container
+          
+    
+    include inc/footer.pug
