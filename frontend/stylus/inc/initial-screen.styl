@@ -78,7 +78,7 @@
       width: 100%
       opacity: 0.5;
       border 0
-      background #fff
+
       &::-webkit-progress-bar
         position: absolute;
         bottom: 30px
@@ -88,9 +88,13 @@
         width: 100%
         opacity: 0.5;
         border 0
-        background: $blue
-      &::-webkit-progress-value,&::-moz-progress-bar
-        background-color: $blue
+        background: #fff
+      &::-webkit-progress-value
+        background $blue
+        height 1px
+
+      &::-moz-progress-bar
+        background $blue
         height 1px
 
     img

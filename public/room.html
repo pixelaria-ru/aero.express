@@ -44,7 +44,7 @@
           <div class="room-left-side">
             <div class="slider-room">
               <button class="prev"></button><img src="images/room-initial-screen.jpg"><img src="images/room-img-2.jpg"><img src="images/room-img-1.jpg">
-              <div class="dots"><span class="active"></span><span></span><span></span></div>
+              <div class="dots"><span></span><span></span><span></span></div>
               <button class="next">         </button>
             </div>
           </div>
@@ -123,7 +123,8 @@
       </div>
       <div class="initial-screen flex">
         <div class="container comm flex">
-          <button class="com-but"> </button>
+          <div class="decor"></div>
+          <button class="com-but prev"></button>
           <div class="comment">
             <h2> <span class="vis">Что говорят клиенты</span><span class="hid">Отзывы</span></h2>
             <p>Небольшой комфортный номер для 1 гостя. Спальная комната (кровать, тумбочка, система кондиционирования, комната (кровать, тумбочка, система кондиционирования,</p>
@@ -170,7 +171,53 @@
               </button>
             </div>
           </div>
-          <button class="com-but"> </button>
+          <div class="comment">
+            <h2> <span class="vis">Что еще говорят клиенты</span><span class="hid">Отзывы</span></h2>
+            <p>Небольшой комфортный номер для 1 гостя. Спальная комната (кровать, тумбочка, система кондиционирования, комната (кровать, тумбочка, система кондиционирования,</p>
+            <div class="flex stars">
+              <button class="star">
+                    <svg class="icon icon-star-pol star-pol">
+                      <use xlink:href="#icon-star-pol"></use>
+                    </svg>
+                    <svg class="icon icon-star star-ovl">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+              </button>
+              <button class="star">
+                    <svg class="icon icon-star-pol star-pol">
+                      <use xlink:href="#icon-star-pol"></use>
+                    </svg>
+                    <svg class="icon icon-star star-ovl">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+              </button>
+              <button class="star">
+                    <svg class="icon icon-star-pol star-pol">
+                      <use xlink:href="#icon-star-pol"></use>
+                    </svg>
+                    <svg class="icon icon-star star-ovl">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+              </button>
+              <button class="star">
+                    <svg class="icon icon-star-pol star-pol">
+                      <use xlink:href="#icon-star-pol"></use>
+                    </svg>
+                    <svg class="icon icon-star star-ovl">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+              </button>
+              <button class="star">
+                    <svg class="icon icon-star-pol star-pol">
+                      <use xlink:href="#icon-star-pol"></use>
+                    </svg>
+                    <svg class="icon icon-star star-ovl">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+              </button>
+            </div>
+          </div>
+          <button class="com-but next">  </button>
         </div>
       </div>
       <div class="other-rooms">
@@ -205,50 +252,59 @@
   </body>
 </html>
 <script>var
-  imgSliderRoom = document.querySelectorAll('.slider-room img'),
-  sliderNext = document.querySelector('.next'),
-  sliderPrev = document.querySelector('.prev'),
-  numImg = 0;
+  roomSliderNext = document.querySelector('.slider-room .next'),
+  roomSliderPrev = document.querySelector('.slider-room .prev'),
+  roomNumImg = 0,
+  roomSliderDots = document.querySelectorAll('.slider-room .dots span');
+  roomSliderImg = document.querySelectorAll('.slider-room img');
 
+roomSliderImg[roomNumImg].style.opacity = 1;
+roomSliderDots[roomNumImg].classList.add('active')
 
-imgSliderRoom[numImg].style.opacity = 1;
-
-sliderNext.addEventListener('click', nextImg);
-function nextImg (){
-  console.log(numImg)
-  if(numImg < imgSliderRoom.length - 1 ){
-
-    imgSliderRoom[numImg].style.opacity = 0;
-    numImg++
-    imgSliderRoom[numImg].style.opacity = 1;
+roomSliderNext.addEventListener('click', function (){
+  if(roomNumImg < roomSliderImg.length - 1) {
+    roomSliderImg[roomNumImg].style.opacity = 0;
+    roomSliderDots[roomNumImg].classList.remove('active')
+    roomNumImg++;
+    roomSliderImg[roomNumImg].style.opacity = 1;
+    roomSliderDots[roomNumImg].classList.add('active')
   }
-  else {
-    imgSliderRoom[numImg].style.opacity = 0;
-    numImg = 0
+});
 
-    numImg++
-    imgSliderRoom[numImg].style.opacity = 1;
+roomSliderPrev.addEventListener('click', function (){
+  if(roomNumImg >= 1){
+    roomSliderImg[roomNumImg].style.opacity = 0;
+    roomSliderDots[roomNumImg].classList.remove('active')
+    roomNumImg--;
+    roomSliderImg[roomNumImg].style.opacity = 1;
+    roomSliderDots[roomNumImg].classList.add('active')
   }
-}
+});
 
-sliderPrev.addEventListener('click', prevImg);
-function prevImg (){
-  console.log(numImg)
-  if(numImg <= imgSliderRoom.length - 1 && numImg > 0){
 
-    imgSliderRoom[numImg].style.opacity = 0;
-    numImg--
-    imgSliderRoom[numImg].style.opacity = 1;
-  }
-  else if(numImg = 0 ){
-    numImg++
-  }
-  else{
-    imgSliderRoom[numImg].style.opacity = 0;
-    numImg--
-    imgSliderRoom[numImg].style.opacity = 1;
-  }
 
-}
+var
+  commSliderNext = document.querySelector('.comm .next'),
+  commSliderPrev = document.querySelector('.comm .prev'),
+  commNumImg = 0,
+  commSliderImg = document.querySelectorAll('.comm .comment');
+
+commSliderImg[commNumImg].style.opacity = 1;
+
+commSliderNext.addEventListener('click', function (){
+  if(commNumImg < commSliderImg.length - 1) {
+    commSliderImg[commNumImg].style.opacity = 0;
+    commNumImg++;
+    commSliderImg[commNumImg].style.opacity = 1;
+  }
+});
+
+commSliderPrev.addEventListener('click', function (){
+  if(commNumImg >= 1){
+    commSliderImg[commNumImg].style.opacity = 0;
+    commNumImg--;
+    commSliderImg[commNumImg].style.opacity = 1;
+  }
+});
 
 </script>

@@ -19,7 +19,7 @@ html(lang='ru')
                 img(src='images/room-img-2.jpg')
                 img(src='images/room-img-1.jpg')
                 .dots
-                  span.active
+                  span
                   span
                   span
                 
@@ -101,7 +101,8 @@ html(lang='ru')
             
         .initial-screen.flex
           .container.comm.flex
-            button.com-but  
+            .decor
+            button.com-but.prev
             .comment
               h2 
                 span.vis Что говорят клиенты
@@ -123,9 +124,30 @@ html(lang='ru')
                 button.star
                   +icon('star-pol','star-pol')
                   +icon('star','star-ovl')
+            .comment
+              h2 
+                span.vis Что еще говорят клиенты
+                span.hid Отзывы
+              p Небольшой комфортный номер для 1 гостя. Спальная комната (кровать, тумбочка, система кондиционирования, комната (кровать, тумбочка, система кондиционирования,
+              .flex.stars
+                button.star
+                  +icon('star-pol','star-pol')
+                  +icon('star','star-ovl')
+                button.star
+                  +icon('star-pol','star-pol')
+                  +icon('star','star-ovl')
+                button.star
+                  +icon('star-pol','star-pol')
+                  +icon('star','star-ovl')
+                button.star
+                  +icon('star-pol','star-pol')
+                  +icon('star','star-ovl')
+                button.star
+                  +icon('star-pol','star-pol')
+                  +icon('star','star-ovl')
 
       
-            button.com-but  
+            button.com-but.next   
             
               
         .other-rooms
