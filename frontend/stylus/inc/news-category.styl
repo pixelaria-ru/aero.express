@@ -1,0 +1,39 @@
+.news-category
+  .initial-screen
+    .container
+      justify-content: center;
+      height: auto;
+      padding: 180px 0px 150px;
+    h1
+      position: relative;
+      &:before
+        position: absolute;
+        content: ''
+        width: 200px
+        height 1px
+        background: #000
+        left 0
+        right 0
+        bottom: -30px
+        margin: auto;
+.news.container
+  padding: 0 85px;
+  flex-wrap: wrap;
+.article-news
+  width: calc(50% - 20px)
+  margin-right: 20px
+  margin-bottom: 40px
+  img
+    max-width: 250px
+    width: 100%
+    background: #f7f7f7
+    margin-right: 20px
+  &__info
+    width: calc(100% - 200px)
+    h3
+      font: 400 1.5rem Montserrat;
+      margin-bottom: 12px;
+      color: #4e4e4e;
+    p
+      font: 400 1rem/1.875rem PT Sans;
+      color: #4e4e4e;
