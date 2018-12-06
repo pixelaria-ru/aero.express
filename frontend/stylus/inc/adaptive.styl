@@ -1,4 +1,20 @@
 @media(min-width 769px) and (max-width 1279px)
+  .news-page
+    &__article
+      img
+        width: 100%
+  .news-category
+    .article-news
+
+      a
+        flex-wrap: wrap;
+      img
+        height 250px
+        margin-right: 0
+        max-width: 100%
+        margin-bottom: 20px
+      &__info
+        width: 100%
   .category
     .initial-screen
       .container
@@ -343,6 +359,27 @@
 
 
 @media(min-width 320px) and (max-width 767px)
+  .news-page
+    .container
+      padding: 0
+    &__article
+      img
+        width: 100%
+  .news-category
+    .news.container
+      padding: 0
+    .article-news
+      width: 100%
+
+      a
+        flex-wrap: wrap;
+      img
+        height 250px
+        margin-right: 0
+        max-width: 100%
+        margin-bottom: 20px
+      &__info
+        width: 100%
   .category
     .initial-screen
       .speedbar
