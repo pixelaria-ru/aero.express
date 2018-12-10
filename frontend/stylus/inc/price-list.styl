@@ -1,0 +1,95 @@
+.price-list
+  .initial-screen
+    .container
+      justify-content: center;
+      height: auto;
+      padding: 180px 0px 150px;
+    h1
+      position: relative;
+      &:before
+        position: absolute;
+        content: ''
+        width: 200px
+        height 1px
+        background: #000
+        left 0
+        right 0
+        bottom: -30px
+        margin: auto;
+  &__article
+    padding: 0 85px;
+.table
+  margin: 90px 0
+.table__column
+  max-width: 200px
+  padding: 20px 0
+  border-right: 1px solid #dedede
+  &.active
+    border 1px solid #27a4eb
+    background: #f2faff
+    .table__column-item
+      background: #f2faff
+  &:last-child
+    border-right: 0px
+.table__column-item
+  color #4e4e4e
+  font-family Montserrat
+  font-size 18px
+  font-weight 400
+  line-height 32px
+  text-align: center;
+  padding: 20px 10px;
+  button
+    background-color #27a4eb
+    color #ffffff
+    font-family "PT Sans"
+    font-size 16px
+    font-weight 400
+    text-transform uppercase
+    padding 19px 46px 17px
+    height: 100%
+    margin: 0 11px
+    transition .55s
+    max-height 50px
+    display flex
+    align-items center
+  &:nth-child(even)
+    background: #fafafa
+  &.table__column-item--header
+    padding: 20px 10px
+
+    .header__info
+      min-height: 96px
+      min-width: 103px
+      display:flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+
+    h3
+      font-weight 700
+      line-height 32px
+    p
+
+      line-height 32px
+
+
+
+
+.teble-additional-infos
+
+  padding: 0 85px 90px;
+  .infos
+    max-width: 720px
+    margin-right: 60px
+  p
+    color #4e4e4e
+    font-family "PT Sans"
+    font-size 18px
+    font-weight 400
+    line-height 32px
+    margin-bottom: 30px
+  .infos-warning
+    padding: 18px 15px
+    border 1px solid #f2f2f2
+    border-left: 5px solid #27a4eb

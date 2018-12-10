@@ -920,6 +920,71 @@ span
 }.news-page__article img
 {
     display: block;float: left;width: 400px;height: 350px;margin-right: 20px;margin-bottom: 20px;background: #f7f7f7;
+}.price-list .initial-screen .container
+{height: auto;padding: 180px 0 150px;
+
+    -webkit-box-pack: center;
+
+        -ms-flex-pack: center;
+
+            justify-content: center;
+}.price-list .initial-screen h1
+{
+    position: relative;
+}.price-list .initial-screen h1:before
+{
+    position: absolute;right: 0;bottom: -30px;left: 0;width: 200px;height: 1px;margin: auto;content: '';background: #000;
+}.price-list__article
+{
+    padding: 0 85px;
+}.table
+{
+    margin: 90px 0;
+}.table__column
+{
+    max-width: 200px;padding: 20px 0;border-right: 1px solid #dedede;
+}.table__column.active
+{
+    border: 1px solid #27a4eb;background: #f2faff;
+}.table__column.active .table__column-item
+{
+    background: #f2faff;
+}.table__column:last-child
+{
+    border-right: 0;
+}.table__column-item
+{
+    font: 400 1.125rem/2rem Montserrat;padding: 20px 10px;text-align: center;color: #4e4e4e;
+}.table__column-item button
+{
+    font: 400 1rem PT Sans;display: -webkit-box;display: -ms-flexbox;display: flex;height: 100%;max-height: 50px;margin: 0 11px;padding: 19px 46px 17px;-webkit-transition: .55s;-o-transition: .55s;transition: .55s;text-transform: uppercase;color: #fff;background: #27a4eb;-webkit-box-align: center;-ms-flex-align: center;align-items: center;
+}.table__column-item:nth-child(2n)
+{
+    background: #fafafa;
+}.table__column-item.table__column-item--header
+{
+    padding: 20px 10px;
+}.table__column-item.table__column-item--header .header__info
+{display: -webkit-box;display: -ms-flexbox;display: flex;min-width: 103px;
+    min-height: 96px;-webkit-box-align: center;-ms-flex-align: center;align-items: center;-ms-flex-wrap: wrap;flex-wrap: wrap;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;
+}.table__column-item.table__column-item--header h3
+{
+    font-weight: 700;line-height: 2rem;
+}.table__column-item.table__column-item--header p
+{
+    line-height: 2rem;
+}.teble-additional-infos
+{
+    padding: 0 85px 90px;
+}.teble-additional-infos .infos
+{
+    max-width: 720px;margin-right: 60px;
+}.teble-additional-infos p
+{
+    font: 400 1.125rem/2rem PT Sans;margin-bottom: 30px;color: #4e4e4e;
+}.teble-additional-infos .infos-warning
+{
+    padding: 18px 15px;border: 1px solid #f2f2f2;border-left: 5px solid #27a4eb;
 }.footer
 {height: 240px;
 

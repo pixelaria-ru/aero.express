@@ -1,0 +1,159 @@
+doctype html
+html(lang='ru')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name='viewport' content='ya-title=#e04592, ya-dock=fade, initial-scale=1, maximum-scale=1, user-scalable=no')
+    meta(name='robots' content='none')
+    link(rel='stylesheet' href='css/style.css')
+    title aero.express
+  body
+    include inc/header.pug
+    main.price-list.container
+        .initial-screen.flex
+          .container.flex
+            h1 СТОИМОСТЬ ПРОЖИВАНИЯ
+        .news.container
+        article.price-list__article.container
+          .table.container.flex
+            ul.table__column
+              li.table__column-item.table__column-item--header
+                .header__info
+                  h3 Часы
+              li.table__column-item
+                span 4
+              li.table__column-item
+                span 6
+              li.table__column-item
+                span 8
+              li.table__column-item
+                span 10
+              li.table__column-item
+                span 12
+              li.table__column-item
+                span 18
+              li.table__column-item
+                span 24
+            ul.table__column.active
+              li.table__column-item.table__column-item--header
+                .header__info
+                  h3 Стандарт 
+                  p одноместный без окна
+              li.table__column-item
+                span 4 050 ₽
+              li.table__column-item
+                span 4 050 ₽
+              li.table__column-item
+                span 4 050 ₽
+              li.table__column-item
+                span 4 050 ₽
+              li.table__column-item
+                span 4 050 ₽
+              li.table__column-item
+                span 4 050 ₽
+              li.table__column-item
+                span 4 050 ₽
+              li.table__column-item
+                button Выбрать
+            
+            ul.table__column
+              li.table__column-item.table__column-item--header
+                .header__info
+                  h3 Стандарт 
+                  p  двухместный без окна
+              li.table__column-item
+                span 4 050 ₽
+              li.table__column-item
+                span 4 050 ₽
+              li.table__column-item
+                span 4 050 ₽
+              li.table__column-item
+                span 4 050 ₽
+              li.table__column-item
+                span 4 050 ₽
+              li.table__column-item
+                span 4 050 ₽
+              li.table__column-item
+                span 4 050 ₽
+              li.table__column-item
+                button Выбрать
+            ul.table__column
+              li.table__column-item.table__column-item--header
+                .header__info
+                  h3 Стандарт 
+                  p двухместный с окном
+              li.table__column-item
+                span 4 050 ₽
+              li.table__column-item
+                span 4 050 ₽
+              li.table__column-item
+                span 4 050 ₽
+              li.table__column-item
+                span 4 050 ₽
+              li.table__column-item
+                span 4 050 ₽
+              li.table__column-item
+                span 4 050 ₽
+              li.table__column-item
+                span 4 050 ₽
+              li.table__column-item
+                button Выбрать
+            ul.table__column
+              li.table__column-item.table__column-item--header
+                .header__info
+                  h3 Бизнес 
+                  p трехместный  без окна
+              li.table__column-item
+                span 4 050 ₽
+              li.table__column-item
+                span 4 050 ₽
+              li.table__column-item
+                span 4 050 ₽
+              li.table__column-item
+                span 4 050 ₽
+              li.table__column-item
+                span 4 050 ₽
+              li.table__column-item
+                span 4 050 ₽
+              li.table__column-item
+                span 4 050 ₽
+              li.table__column-item
+                button Выбрать
+            ul.table__column
+              li.table__column-item.table__column-item--header
+                .header__info
+                  h3 Первый класс
+                  p трехместный с окном 
+              li.table__column-item
+                span 4 050 ₽
+              li.table__column-item
+                span 4 050 ₽
+              li.table__column-item
+                span 4 050 ₽
+              li.table__column-item
+                span 4 050 ₽
+              li.table__column-item
+                span 4 050 ₽
+              li.table__column-item
+                span 4 050 ₽
+              li.table__column-item
+                span 4 050 ₽
+              li.table__column-item
+                button Выбрать
+        .teble-additional-infos.flex.container
+          .infos
+            p НДС включен в стоимость. При продлении времени проживания оплата взимается по 4х часовому тарифу согласно прейскуранту и категории номера. Возврат денежных средств за неиспользованные часы проживания в отеле не производится. 
+            p.infos-warning Все номера отеля «Воздушный экспресс» являются некурящими. Размещение с домашними животными в номерах отеля не представляется возможным.
+          img(src='images/table-additional-onfos.jpg' alt='')
+                  
+              
+            
+            
+                    
+        .map
+          .container
+              
+        
+    include inc/footer.pug        
+script
+  include scripts/slider.js
