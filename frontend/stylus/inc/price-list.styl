@@ -24,11 +24,13 @@
   max-width: 200px
   padding: 20px 0
   border-right: 1px solid #dedede
-  &.active
-    border 1px solid #27a4eb
-    background: #f2faff
-    .table__column-item
+  &.column--hover
+    &:hover
+      border 1px solid #27a4eb
       background: #f2faff
+      cursor: pointer;
+      .table__column-item
+        background: #f2faff
   &:last-child
     border-right: 0px
 .table__column-item
@@ -81,7 +83,11 @@
   padding: 0 85px 90px;
   .infos
     max-width: 720px
-    margin-right: 60px
+    width: 100%
+
+  img
+    width: calc(100% - 720px)
+    margin-left: 60px
   p
     color #4e4e4e
     font-family "PT Sans"

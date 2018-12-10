@@ -943,10 +943,13 @@ span
 }.table__column
 {
     max-width: 200px;padding: 20px 0;border-right: 1px solid #dedede;
-}.table__column.active
-{
+}.table__column.column--hover:hover,
+.table__column.column--hover:focus
+{cursor: pointer;
+
     border: 1px solid #27a4eb;background: #f2faff;
-}.table__column.active .table__column-item
+}.table__column.column--hover:hover .table__column-item,
+.table__column.column--hover:focus .table__column-item
 {
     background: #f2faff;
 }.table__column:last-child
@@ -977,8 +980,11 @@ span
 {
     padding: 0 85px 90px;
 }.teble-additional-infos .infos
+{width: 100%;
+    max-width: 720px;
+}.teble-additional-infos img
 {
-    max-width: 720px;margin-right: 60px;
+    width: calc(100% - 720px);margin-left: 60px;
 }.teble-additional-infos p
 {
     font: 400 1.125rem/2rem PT Sans;margin-bottom: 30px;color: #4e4e4e;
