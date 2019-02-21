@@ -7,7 +7,7 @@
 		url('PTSans/PTSans-Bold.eot?#iefix') format('embedded-opentype'),
 		url('PTSans/PTSans-Bold.woff') format('woff'),
 		url('PTSans/PTSans-Bold.ttf') format('truetype');
-	font-weight: bold;
+	font-weight: 700;
 	font-style: normal;
 }
 
@@ -18,7 +18,7 @@
 		url('PTSans/PTSans-Italic.eot?#iefix') format('embedded-opentype'),
 		url('PTSans/PTSans-Italic.woff') format('woff'),
 		url('PTSans/PTSans-Italic.ttf') format('truetype');
-	font-weight: normal;
+	font-weight: 400;
 	font-style: italic;
 }
 
@@ -29,7 +29,7 @@
 		url('PTSans/PTSans-Regular.eot?#iefix') format('embedded-opentype'),
 		url('PTSans/PTSans-Regular.woff') format('woff'),
 		url('PTSans/PTSans-Regular.ttf') format('truetype');
-	font-weight: normal;
+	font-weight: 400;
 	font-style: normal;
 }
 
@@ -40,7 +40,7 @@
 		url('PTSans/PTSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
 		url('PTSans/PTSans-BoldItalic.woff') format('woff'),
 		url('PTSans/PTSans-BoldItalic.ttf') format('truetype');
-	font-weight: bold;
+	font-weight: 700;
 	font-style: italic;
 }
 
@@ -95,7 +95,7 @@
 		url('Montserrat/Montserrat-BoldItalic.eot?#iefix') format('embedded-opentype'),
 		url('Montserrat/Montserrat-BoldItalic.woff') format('woff'),
 		url('Montserrat/Montserrat-BoldItalic.ttf') format('truetype');
-	font-weight: bold;
+	font-weight: 700;
 	font-style: italic;
 }
 
@@ -139,7 +139,7 @@
 		url('Montserrat/Montserrat-Italic.eot?#iefix') format('embedded-opentype'),
 		url('Montserrat/Montserrat-Italic.woff') format('woff'),
 		url('Montserrat/Montserrat-Italic.ttf') format('truetype');
-	font-weight: normal;
+	font-weight: 400;
 	font-style: italic;
 }
 
@@ -150,7 +150,7 @@
 		url('Montserrat/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
 		url('Montserrat/Montserrat-Bold.woff') format('woff'),
 		url('Montserrat/Montserrat-Bold.ttf') format('truetype');
-	font-weight: bold;
+	font-weight: 700;
 	font-style: normal;
 }
 
@@ -194,7 +194,7 @@
 		url('Montserrat/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
 		url('Montserrat/Montserrat-Regular.woff') format('woff'),
 		url('Montserrat/Montserrat-Regular.ttf') format('truetype');
-	font-weight: normal;
+	font-weight: 400;
 	font-style: normal;
 }
 
@@ -250,7 +250,7 @@
 		url('Georgia/Georgia-BoldItalic.eot?#iefix') format('embedded-opentype'),
 		url('Georgia/Georgia-BoldItalic.woff') format('woff'),
 		url('Georgia/Georgia-BoldItalic.ttf') format('truetype');
-	font-weight: bold;
+	font-weight: 700;
 	font-style: italic;
 }
 
@@ -261,7 +261,7 @@
 		url('Georgia/Georgia-Italic.eot?#iefix') format('embedded-opentype'),
 		url('Georgia/Georgia-Italic.woff') format('woff'),
 		url('Georgia/Georgia-Italic.ttf') format('truetype');
-	font-weight: normal;
+	font-weight: 400;
 	font-style: italic;
 }
 
@@ -272,7 +272,7 @@
 		url('Georgia/Georgia-Bold.eot?#iefix') format('embedded-opentype'),
 		url('Georgia/Georgia-Bold.woff') format('woff'),
 		url('Georgia/Georgia-Bold.ttf') format('truetype');
-	font-weight: bold;
+	font-weight: 700;
 	font-style: normal;
 }
 
@@ -283,6 +283,6 @@
 		url('Georgia/Georgia.eot?#iefix') format('embedded-opentype'),
 		url('Georgia/Georgia.woff') format('woff'),
 		url('Georgia/Georgia.ttf') format('truetype');
-	font-weight: normal;
+	font-weight: 400;
 	font-style: normal;
 }
