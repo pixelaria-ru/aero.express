@@ -657,7 +657,9 @@ img
 
 .for-who__block p.warn span
 {
-    display: inline-block;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
 
     width: 19px;
     height: 19px;
@@ -668,6 +670,9 @@ img
     color: #fff;
     border-radius: 50%;
     background: #f07679;
+
+    align-items: center;
+    justify-content: center;
 }
 
 .for-who__right-side
