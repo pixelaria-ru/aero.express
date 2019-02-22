@@ -684,6 +684,129 @@ img
     max-height: 460px;
 }
 
+.for-who__right-side p
+{
+    font: 400 1.5rem Montserrat;
+
+    color: #4e4e4e;
+}
+
+.for-who__right-side p.pech
+{
+    position: absolute;
+    right: 56px;
+    bottom: 155px;
+}
+
+.for-who__right-side p.pech3
+{
+    position: absolute;
+    top: 97px;
+    left: 56px;
+}
+
+.for-who__right-side p.pech4
+{
+    font: 400 0.875rem 'PT Sans';
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+
+    margin-bottom: 8px;
+
+    color: #4e4e4e;
+
+    align-items: center;
+}
+
+.for-who__right-side p.pech4:before
+{
+    display: inline-block;
+
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+
+    content: '';
+
+    background: #76c4f0;
+}
+
+.for-who__right-side p.pech5
+{
+    font: 400 0.875rem 'PT Sans';
+
+    color: #4e4e4e;
+}
+
+.for-who__right-side p.pech5:before
+{
+    display: inline-block;
+
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+
+    content: '';
+
+    background: #f07679;
+}
+
+.for-who__right-side svg
+{
+    fill: #f7f7f7;
+}
+
+.for-who__right-side svg:first-child
+{
+    height: 376px;
+}
+
+.for-who__right-side svg:nth-child(2)
+{
+    width: 259px;
+    margin-top: -118px;
+    margin-left: 222px;
+}
+
+.for-who__right-side svg:nth-child(2) #bg polygon
+{
+    fill: #a1c4d8;
+}
+
+.for-who__right-side svg:nth-child(2) #bg polygon.active
+{
+    fill: #76c4f0;
+}
+
+.for-who__right-side svg g
+{
+    stroke: #bbb !important;
+}
+
+.for-who__right-side svg text
+{
+    display: none;
+}
+
+.for-who__right-side svg .fill-FFAC0122
+{
+    fill: #a1c4d8;
+}
+
+.for-who__right-side svg .fill-FFAC0122.active
+{
+    fill: #76c4f0;
+}
+
+.for-who__right-side svg #offset
+{
+    fill: #bbb;
+}
+
 .rect-one
 {
     position: relative;
