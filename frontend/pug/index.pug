@@ -18,7 +18,7 @@ html(lang='ru')
                 |отель прямо в аэропорту Шереметьево
               hr
               p Комфортные номера в транзитной и общей зоне с почасовой оплатой
-              button Забронировать номер
+              button.button.button--blue Забронировать номер
             .slider
               img(src='images/initial-screen-1.jpg')
               img(src='images/room-img-2.jpg')
@@ -100,31 +100,7 @@ html(lang='ru')
                 p Наша цель — обеспечить каждого гостя вниманием и лучшим сервисом.
                 hr
         hr
-        .additional-info
-          .container.flex
-            .additional-info__left-side
-              img(src='images/aircraft.jpg' alt='')
-            .additional-info__right-side
-              h2 Работаем для вас
-              .flex.wrap
-                p 
-                  span 2 
-                  |отеля внутри аэропорта
-                p 
-                  span 58 
-                  |номеров
-                p 
-                  span 8 
-                  |минут пешком от зоны посадки 
-                p 
-                  span 70 
-                  |человек в команде
-                p 
-                  span 10 
-                  |лет успешной работы
-                p 
-                  span 55 000 
-                  |гостей в год
+        include section/section-work.pug
         .map
           .container
               

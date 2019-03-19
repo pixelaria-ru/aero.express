@@ -24,6 +24,28 @@ $repeat = repeating-linear-gradient(45deg, #006faf,#006faf 1px, #fff0 2px,#fff0 
 @import 'inc/news-page.styl'
 @import 'inc/price-list.styl'
 @import 'inc/footer.styl'
+@import 'inc/about.styl'
+
+
+.button
+  color #ffffff
+  font-family "PT Sans"
+  font-size 16px
+  font-weight 400
+  text-transform uppercase
+  padding 19px 30px 17px
+  height: 100%
+  transition .55s
+  max-height 50px
+  display flex
+  align-items center
+  &.button--blue
+    background-color #27a4eb
+    &:hover
+      background-color: #76c4f0;
+  &.button--pink
+    background-color #f07679
+
 
 .map
   .container

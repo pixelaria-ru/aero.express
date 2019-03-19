@@ -15,6 +15,10 @@
   &__right-side
     z-index 99
     margin-top 24px
+    align-items center
+    .button.button--pink
+      padding 7px 10px 9px
+      font-size 14px
 .logotype
   width 183px
   height 110px
@@ -52,11 +56,26 @@
     font-family "PT Sans"
     font-size 18px
     font-weight 400
+    text-transform uppercase
+    margin-right 10px
+    &:last-child
+      margin-right 35px
+    &.active
+      color #27a4eb
 .menu
   margin-left 30px
   width 50px
   height 28px
   background: 0
+  position relative
+  outline 0
+  p
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -23px;
+    top: 9px;
+    font-size 10px
+    font-weight 400
   &.active
     span
       transform: rotate(45deg);
