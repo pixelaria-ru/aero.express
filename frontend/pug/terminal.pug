@@ -1,0 +1,108 @@
+doctype html
+html(lang='ru')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name='viewport' content='ya-title=#e04592, ya-dock=fade, initial-scale=1, maximum-scale=1, user-scalable=no')
+    meta(name='robots' content='none')
+    link(rel='stylesheet' href='css/style.css')
+    title aero.express 
+  body
+    include inc/header.pug
+    main.main.container.terminal
+        .initial-screen.flex
+          .container.flex
+            
+            .info
+              .speedbar
+                a(href='/') Главная / 
+                span Комнаты 
+              h1  Отель в Терминале Е
+              hr
+              p Отдохните в наших уютных и функциональных номерах, созданных специально для транзитных путешественников в безвизовой зоне аэропорта
+              .flex.terminal-info
+                button.button.button--blue Забронировать
+                p Будьте внимательны: для входа со стороны России нужно пройти паспортный контроль
+            .slider
+              img(src='images/initial-screen-1.jpg')
+              img(src='images/room-img-2.jpg')
+              img(src='images/room-img-1.jpg')
+              progress.slider-progres(max='6000' value='0')
+
+        .select-room 
+          h2 Выберите свой номер
+          .flex.select-room__rooms
+            article.select-room__room 
+              .select-room__room-img
+                img(src='images/select-room-1.jpg' alt='')
+                button.button.button--pink Забронировать  
+              .select-room__room-info
+                h3 Одноместный стандарт с окном
+                .flex.mans-icon
+                  span.man-user   
+            article.select-room__room
+              .select-room__room-img 
+                img(src='images/select-room-2.jpg' alt='')
+                button.button.button--pink Забронировать  
+              .select-room__room-info
+                h3 Двухместный стандарт 
+                .flex.mans-icon
+                  span.man-user 
+                  span.man-user   
+            article.select-room__room
+              .select-room__room-img 
+                img(src='images/select-room-3.jpg' alt='')
+                button.button.button--pink Забронировать
+              .select-room__room-info
+                h3 Двухместный стандарт с окном
+                .flex.mans-icon
+                  span.man-user 
+                  span.man-user   
+            article.select-room__room
+              .select-room__room-img 
+                img(src='images/select-room-4.jpg' alt='')
+                button.button.button--pink Забронировать  
+              .select-room__room-info
+                h3 Трехместный бизнес
+                .flex.mans-icon
+                  span.man-user 
+                  span.man-user  
+                  span.man-user   
+            article.select-room__room
+              .select-room__room-img 
+                img(src='images/select-room-5.jpg' alt='')
+                button.button.button--pink Забронировать  
+              .select-room__room-info
+                h3 Трехместный бизнес с окном
+                .flex.mans-icon
+                  span.man-user 
+                  span.man-user  
+                  span.man-user   
+          p.remarkus Во всех номера отеля вы нойдете удобные спальные места, горячий душ,  бесплатный Wi-Fi, кондиционер, телевизор, телефон: набор душевых принадлежностей, фен. Площадь номеров 7,5 до 20 м. Подходят для маломобильных путешественников. 
+        hr
+        .advantages
+          .container
+            h2 Как добраться
+            .flex
+              .advantages__left-side.flex
+                p Нас легко найти! Пройдя зону посадки:
+                ul.terminaler__list 
+                  li.terminaler__item
+                    p Описываем шаг 1
+                  li.terminaler__item
+                    p Далее шаг 2
+                  li.terminaler__item
+                    p Наконец пишем про шаг 3
+                  li.terminaler__item
+                    p Отлично. вы у цели!
+                
+                  
+              .advantages__right-side
+                
+      
+        .map
+          .container
+              
+        
+    include inc/footer.pug
+    

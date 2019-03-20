@@ -1,0 +1,99 @@
+.contacts
+  flex-wrap wrap
+  padding 0 85px
+  justify-content space-between
+  width 100%
+  margin-top 40px
+
+  .map
+    width 465px
+    height 340px
+    background-color #f7f7f7
+
+
+.contacts-item
+  margin-top 30px
+  &:nth-child(1)
+    .contacts-item__icon
+      &:before
+        background-image url(../images/map-pin-marked.png)
+  &:nth-child(2)
+    .contacts-item__icon
+      &:before
+        background-image url(../images/speech-bubble.png)
+  &:nth-child(3)
+    .contacts-item__icon
+      &:before
+        background-image url(../images/clock.png)
+  &:first-child
+    margin-top 0
+  &__icon
+    width 40px
+    height 40px
+    border-radius 50%
+    border 1px solid #27a4eb
+    margin-right 30px
+    margin-top 9px
+    display flex
+    align-items center
+    justify-content center
+    &:before
+      content ''
+      width 20px
+      height 20px
+      display block
+  &__info
+    max-width 500px
+    p,h6
+      font-family "PT Sans"
+      font-size 16px
+      font-weight 400
+      line-height 28px
+    p
+      color #5b5b5b
+      a
+        color #76c4f0
+    h6
+      color #4e4e4e
+      font-weight 700
+
+
+.contacts-map
+  background-image url(../images/big-mapa.jpg)
+  background-size cover
+  background-position center
+  width 100%
+  margin-top 80px
+  margin-bottom 100px
+  .flex-right
+    margin-top 70px
+    justify-content flex-end
+    .advantages__right-side
+      h3
+        &:after
+          right auto
+          left 80px
+          width 316px
+          height 22px
+          bottom -10px
+        &:before
+          right auto
+          left 80px
+          width 316px
+          height 10px
+          bottom -10px
+
+  .advantages__right-side
+    top 0
+    max-width 810px
+    background rgba(255, 255, 255, 0.9)
+    hr
+        margin-left: 0;
+        max-width 270px
+    h3
+      &:after
+        right 0px
+        width 20px
+      &:before
+        right -10px
+        width 10px
