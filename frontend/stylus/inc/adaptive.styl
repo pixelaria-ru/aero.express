@@ -1,3 +1,61 @@
+@media(min-width 1440px)
+  .container
+    max-width 1920px
+    padding-left 80px
+    padding-right 80px
+  .header
+    padding 0 185px
+  .initial-screen .info
+    max-width 540px
+    margin: 105px 0 105px 135px
+  .initial-screen .slider
+    width: 865px;
+    img
+      width: 865px;
+  .for-who__block
+    max-width: 650px;
+  .category-of-room__left-side
+    width: calc(33% - 20px);
+  .category-of-room__left-side .category-of-room__block
+    margin-right 20px
+    height: 100%;
+    &:hover
+      h3
+        bottom calc(66% - 24px / 2)
+      p
+        bottom: 50px;
+
+    img
+      height 100%
+    h3
+      right: 0;
+      bottom: calc(50% - 24px / 2);
+      left: 0;
+      position: absolute;
+      padding 0
+      transition: .55s;
+      text-align: center;
+    p
+      right: 0;
+      bottom: 0;
+      left: 0;
+      max-width: 260px;
+      text-align center
+      margin auto
+
+
+  .category-of-room__right-side
+    display: flex;
+    width: 66%;
+  .category-of-room__right-side .category-of-room__block
+    max-width: calc(50% - 10px);
+    max-height: 350px;
+    margin-right 20px
+    width 100%
+    &:first-child
+      margin-bottom 0
+    &:last-child
+      margin-right 0
 @media(min-width 769px) and (max-width 1279px)
   .news-page
     &__article
