@@ -54,8 +54,20 @@
   position relative
   transition .55s
   cursor pointer
+  &:first-child
+    &:before
+      content 'А'
+  &:last-child
+    &:before
+      content 'Е'
   &:before
-    content ''
+    display flex
+    justify-content center
+    align-items center
+    color #9e9e9e
+    font-family "PT Sans"
+    font-size 18px
+    font-weight 500
     width 30px
     height 30px
     border-radius 50%
@@ -69,7 +81,14 @@
     transition .55s
   &.active
     border 1px solid #76c4f0
+    h3
+      span
+        color #76c4f0
+        border-bottom 1px solid #76c4f0
+      &:after
+        transform scale(1)
     &:before
+      color #27a4eb
       border 1px solid #27a4eb
   h3
     color #4e4e4e
@@ -77,6 +96,22 @@
     font-size 24px
     font-weight 400
     margin-bottom 12px
+    display inline-flex
+    span
+      padding-bottom 2px
+      border-bottom 1px solid #4e4e4e
+      transition .33s
+    &:after
+      content ''
+      background url('../images/next.png')
+      display block
+      width 26px
+      margin-left 10px
+      background-repeat no-repeat
+      background-position center
+      height 26px
+      transform scale(0)
+      transition .33s
   p
     color #4e4e4e
     font-family 'PT Sans'
@@ -104,16 +139,16 @@
   p
     color #4e4e4e
     font-family Montserrat
-    font-size 24px
+    font-size 18px
     font-weight 400
     &.pech
       position: absolute;
-      right: 56px;
+      right: 25px
       bottom: 155px;
     &.pech3
       position: absolute;
       top: 97px;
-      left: 56px;
+      left: -16px
     &.pech4
       color #4e4e4e
       font-family "PT Sans"
