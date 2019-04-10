@@ -53,20 +53,28 @@
       top 0
       bottom: 0
       margin: auto;
-
       z-index: 999
       width: 100px;
-      height: 6px;
+      width: 26px;
+      height: 26px;
       background-color: #ffffff;
       padding:  0
+      outline none
       &.next
         right: 20px
         padding:  0
-        max-height: 6px
+
+        background-repeat no-repeat
+        background-position center
+        background-image url(../images/nextSlide.png)
       &.prev
         left 20px
-        max-height: 6px
+
         padding: 0
+        background-repeat no-repeat
+        background-position center
+        background-image url(../images/nextSlide.png)
+        transform rotate(-180deg)
 
 
 .room-right-side
@@ -152,6 +160,32 @@
       max-width: 225px
       align-items: center;
       width: 100%;
+
+
+      &:nth-child(1)
+        .icon
+          background url(../images/bed.png) no-repeat center
+      &:nth-child(2)
+        .icon
+          background url(../images/bathtub.png) no-repeat center
+      &:nth-child(3)
+        .icon
+          background url(../images/Rectanglea.png) no-repeat center
+      &:nth-child(4)
+        .icon
+          background url(../images/air-conditioner.png) no-repeat center
+      &:nth-child(5)
+        .icon
+          background url(../images/tv.png) no-repeat center
+      &:nth-child(6)
+        .icon
+          background url(../images/hair-dryer.png) no-repeat center
+      &:nth-child(7)
+        .icon
+          background url(../images/wifi-2.png) no-repeat center
+      &:nth-child(8)
+        .icon
+          background url(../images/room-service-2.png) no-repeat center
       p
         width: calc(100% - 90px);
 
@@ -382,13 +416,34 @@
   margin: 0
   width: 97px;
   height: 1px;
+  outline none
+  position relative
+  height: 26px;
   background-color: #4e4e4e;
+  &:before
+    content ''
+    position absolute
+    top 0
+    bottom 0
+    left 0
+    margin auto
+    width: 97px;
+    height: 1px;
+    background-color: #4e4e4e;
   &.next
     right 65px
     position: absolute;
+    background-repeat no-repeat
+    background-position right
+    background-image url(../images/nextSlideBlaack.png)
   &.prev
+
     left 65px
     position: absolute;
+    background-repeat no-repeat
+    background-position right
+    background-image url(../images/nextSlideBlaack.png)
+    transform rotate(-180deg)
 
 .decor
   &:before
