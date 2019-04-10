@@ -2874,9 +2874,73 @@ img
 
 .footer
 {
-    height: 240px;
+    padding-top: 55px;
+    padding-bottom: 35px;
 
     background: #363636;
+}
+
+.footer .j-c__s-b
+{
+    justify-content: space-between;
+}
+
+.footer__list
+{
+    margin-right: 50px;
+}
+
+.footer__list:last-child
+{
+    margin-right: 0;
+}
+
+.footer__item
+{
+    margin-top: 10px;
+}
+
+.footer__item:first-child
+{
+    margin-top: 0;
+}
+
+.footer__item a
+{
+    font: 0.875rem/1.375rem 'PT Sans';
+
+    color: #fff;
+}
+
+.footer__right
+{
+    text-align: right;
+}
+
+.footer__bottom
+{
+    margin-top: 50px;
+}
+
+.footer__bottom p
+{
+    font: 0.875rem 'PT Sans';
+
+    color: #787878;
+}
+
+.footer__bottom a
+{
+    font: 0.875rem 'PT Sans';
+
+    color: #5e5e5e;
+}
+
+.footer__bottom a span
+{
+    font-weight: 700;
+
+    color: #2883d6;
 }
 
 .about-text
