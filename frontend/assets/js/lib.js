@@ -93,8 +93,10 @@ slider()
 
   function rectOne (){
     if(document.querySelectorAll('.for-who__block')[0]){
-      document.querySelector('.for-who__right-side svg:nth-child(2) #bg polygon').classList.add('active')
-      document.querySelector('.for-who__right-side svg .fill-FFAC0122').classList.remove('active')
+      document.querySelector('.for-who__right-side svg:nth-child(2) #bg polygon').classList.remove('active')
+      document.querySelector('.for-who__right-side svg .fill-FFAC0122').classList.add('active')
+      document.querySelector('.for-who__right-side svg:nth-child(2) #offset').style.fill = '#bbb'
+      document.querySelector('.for-who__right-side svg #offset').style.fill = '#19acff'
       document.querySelectorAll('.for-who__block')[0].classList.add('active');
       document.querySelectorAll('.for-who__block')[1].classList.remove('active');
     }
@@ -102,8 +104,10 @@ slider()
   }
   function rectTwo (){
     if(document.querySelectorAll('.for-who__block')[0]){
-      document.querySelector('.for-who__right-side svg:nth-child(2) #bg polygon').classList.remove('active')
-      document.querySelector('.for-who__right-side svg .fill-FFAC0122').classList.add('active')
+      document.querySelector('.for-who__right-side svg:nth-child(2) #bg polygon').classList.add('active')
+      document.querySelector('.for-who__right-side svg .fill-FFAC0122').classList.remove('active')
+      document.querySelector('.for-who__right-side svg:nth-child(2) #offset').style.fill = '#19acff'
+      document.querySelector('.for-who__right-side svg #offset').style.fill = '#bbb'
       document.querySelectorAll('.for-who__block')[0].classList.remove('active');
       document.querySelectorAll('.for-who__block')[1].classList.add('active');
     }

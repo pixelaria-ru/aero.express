@@ -10,6 +10,19 @@ function slider(){
     roomSliderImg[roomNumImg].style.opacity = 1;
     roomSliderDots[roomNumImg].classList.add('active')
 
+
+    for(let i=0, max= roomSliderDots.length; i<max;i++){
+      roomSliderDots[i].addEventListener('click',function(){
+        for(let i=0, max= roomSliderDots.length; i<max;i++){
+          roomSliderDots[i].classList.remove('active')
+          roomSliderImg[i].style.opacity = 0;
+        }
+        roomSliderDots[i].classList.add('active')
+        roomSliderImg[i].style.opacity = 1;
+      })
+    }
+
+
     roomSliderNext.addEventListener('click', function (){
       if(roomNumImg < roomSliderImg.length - 1) {
         roomSliderImg[roomNumImg].style.opacity = 0;

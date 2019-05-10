@@ -136,6 +136,72 @@
   max-width: 565px
   width: 100%
   max-height: 460px
+  .mapToolTip
+    max-width: 200px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    padding-top: 19px;
+    position: absolute;
+    transform scale(0.5)
+    transition .33s
+    opacity 0
+  &:hover
+      .mapToolTip
+        transform scale(1)
+        opacity 1
+  &.active-pop-up
+    position fixed
+    top 0
+    bottom 0
+    right 0
+    left 0
+    margin auto
+    z-index 9
+    background #fff
+    max-width: 100%;
+    max-height: 100%;
+    padding: 50px 300px;
+    .mapToolTip
+      display none
+    .cancelMap
+      position absolute
+      right 50px
+      top 50px
+      width 50px
+      height 50px
+      cursor pointer
+      &:before
+        content ''
+        position absolute
+        width 50px
+        background #333
+        height 1px
+        transform rotate(45deg)
+      &:after
+        content ''
+        position absolute
+        width 50px
+        background #333
+        height 1px
+        transform rotate(-45deg)
+    p.pech3
+      position: absolute;
+      top: 136px;
+      left: 307px;
+    p.pech
+      position: absolute;
+      right: 413px;
+      bottom: 155px;
+    svg
+      &:first-child
+        height: 590px
+      &:nth-child(2)
+        width: 385px;
+        margin-top: -134px;
+        margin-left: 360px;
   p
     color #4e4e4e
     font-family Montserrat
@@ -180,6 +246,10 @@
     fill #f7f7f7
     &:first-child
       height: 376px;
+      #inactive-objects
+        .fill-F2F4F6:nth-child(2)
+          fill: #f07679;
+          transform: translate3d(-423px,648px,0);
     &:nth-child(2)
       width: 259px;
       margin-top: -118px;
@@ -187,18 +257,22 @@
       #bg
         polygon
           fill #a1c4d8
+          transition .33s
           &.active
-            fill  #76c4f0
+            fill  #19acff
     g
       stroke #bbb!important
     text
       display none
     .fill-FFAC0122
       fill #a1c4d8
+      transition .33s
       &.active
-        fill #76c4f0
+        fill #19acff
     #offset
       fill #bbb
+      transition .33s
+
 
 
 
